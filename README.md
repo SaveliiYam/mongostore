@@ -18,10 +18,3 @@ err = coll.FindOne(ctx, bson.M{"name": "Ada"}, &user)
 ```bash
 go get github.com/SaveliiYam/mongostore@latest
 ```
-
-Пока репозиторий локальный — в `go.mod` потребителя:
-
-```
-replace github.com/SaveliiYam/docstore => ../docstore
-replace github.com/SaveliiYam/mongostore => ../mongostore
-```
